@@ -2,22 +2,26 @@
 <html lang="tr">
 
 <head>
-<meta name="google-site-verification" content="c_O-vdwrzdBn6ImKCO2z5sjUOwUnTjxBTGWJcCeQfOc" />
+
+    <head>
+
+    <meta name="google-site-verification" content="c_O-vdwrzdBn6ImKCO2z5sjUOwUnTjxBTGWJcCeQfOc">
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Devasamatematikk | Nisa Soylu Matematik Öğretmeni</title>
+    <title>Devasa Matematik | Nisa Soylu Matematik Öğretmeni</title>
 
-    <meta name="description"
-          content="Nisa Soylu ile LGS, TYT, AYT, ortaokul ve lise matematik özel dersleri. Online ve Malatya içi yüz yüze matematik eğitimi.">
+    <meta name="description" content="Devasa Matematik, Nisa Soylu tarafından sunulan LGS, TYT, AYT, ortaokul ve lise matematik özel ders eğitim platformudur. Online ve Malatya içi yüz yüze matematik dersleri.">
 
     <meta name="author" content="Nisa Soylu">
 
-    <style>
+    <meta name="robots" content="index, follow">
 
-        /* =====================================
-           TEMEL AYARLAR
-        ===================================== */
+    <link rel="canonical" href="https://devasamatematik.github.io/devasamatematikk/">
+
+    <style>
 
         * {
             margin: 0;
@@ -37,6 +41,662 @@
             --gri: #68758a;
             --cizgi: #e1e7f0;
         }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--arka-plan);
+            color: var(--metin);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1150px, 90%);
+            margin: 0 auto;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(7, 26, 61, 0.97);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .navbar {
+            width: min(1200px, 92%);
+            margin: auto;
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 23px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: #9ebce8;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a9c4eb;
+        }
+
+        .hero {
+            min-height: 100vh;
+            padding: 120px 5% 70px;
+            background:
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(75, 125, 195, 0.35),
+                    transparent 32%
+                ),
+                linear-gradient(
+                    135deg,
+                    #061735,
+                    #0c2c60 65%,
+                    #123c7a
+                );
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "π";
+            position: absolute;
+            right: 3%;
+            bottom: -130px;
+            font-size: 420px;
+            font-weight: bold;
+            color: rgba(255,255,255,0.035);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            width: min(650px, 100%);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 7px 16px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50px;
+            color: #dce8f8;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(44px, 6vw, 72px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #a9c5eb;
+        }
+
+        .hero h2 {
+            font-size: clamp(22px, 3vw, 34px);
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            max-width: 620px;
+            color: #d6e1f0;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .button-primary {
+            background: white;
+            color: var(--lacivert);
+        }
+
+        .button-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.20);
+        }
+
+        .button-outline {
+            color: white;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .button-outline:hover {
+            background: rgba(255,255,255,0.10);
+        }
+
+        .hero-photo-area {
+            width: 350px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 3;
+        }
+
+        .hero-photo {
+            width: 350px;
+            height: 440px;
+            object-fit: cover;
+            border-radius: 24px;
+            border: 5px solid rgba(255,255,255,0.16);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.32);
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            max-width: 720px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-label {
+            color: var(--mavi);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 9px;
+        }
+
+        .section-header h2 {
+            color: var(--lacivert);
+            font-size: clamp(30px, 4vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .section-header p {
+            color: var(--gri);
+            font-size: 16px;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            color: var(--lacivert);
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+
+        .about-content p {
+            color: var(--gri);
+            font-size: 17px;
+            margin-bottom: 16px;
+        }
+
+        .experience-box {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: var(--arka-plan);
+            border: 1px solid var(--cizgi);
+            border-radius: 50px;
+            color: var(--lacivert);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .lesson-card {
+            position: relative;
+            background: white;
+            border: 1px solid var(--cizgi);
+            border-radius: 16px;
+            padding: 30px 26px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .lesson-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--lacivert);
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(7,26,61,0.10);
+        }
+
+        .lesson-number {
+            color: #7b91b3;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 13px;
+        }
+
+        .lesson-card h3 {
+            color: var(--lacivert);
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .lesson-card p {
+            color: var(--gri);
+            font-size: 15px;
+        }
+
+        .format-section {
+            background: var(--lacivert);
+        }
+
+        .format-section .section-label {
+            color: #a9c5eb;
+        }
+
+        .format-section .section-header h2 {
+            color: white;
+        }
+
+        .format-section .section-header p {
+            color: #c3d0e2;
+        }
+
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .format-card {
+            padding: 32px;
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 17px;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .format-card h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .format-card p {
+            color: #c4d0e1;
+            font-size: 15px;
+        }
+
+        .format-note {
+            margin-top: 20px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.08);
+            color: #e6edf7;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .system-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .system-card {
+            background: white;
+            padding: 28px;
+            border: 1px solid var(--cizgi);
+            border-radius: 16px;
+        }
+
+        .system-number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--lacivert);
+            color: white;
+            border-radius: 50%;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .system-card h3 {
+            color: var(--lacivert);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .system-card p {
+            color: var(--gri);
+            font-size: 15px;
+        }
+
+        .pdf-section {
+            background: #f3f6fa;
+        }
+
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .pdf-card {
+            background: white;
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid var(--cizgi);
+            box-shadow: 0 10px 30px rgba(11,31,58,0.05);
+            transition: 0.3s;
+        }
+
+        .pdf-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 40px rgba(11,31,58,0.10);
+        }
+
+        .pdf-icon {
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--lacivert);
+            color: white;
+            border-radius: 14px;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .pdf-card h3 {
+            color: var(--lacivert);
+            font-size: 20px;
+            margin-bottom: 9px;
+        }
+
+        .pdf-card p {
+            color: var(--gri);
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pdf-status {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #edf1f6;
+            color: #566579;
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .youtube {
+            background: #eef3f9;
+        }
+
+        .youtube-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 50px 30px;
+            background: var(--lacivert);
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .youtube-box h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .youtube-box p {
+            color: #cbd7e8;
+            margin-bottom: 25px;
+        }
+
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            padding: 28px 20px;
+            border: 1px solid var(--cizgi);
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            color: var(--lacivert);
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--gri);
+            font-size: 15px;
+        }
+
+        .contact-card a:hover {
+            color: var(--mavi);
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #071a3d, #123b7a);
+            text-align: center;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: clamp(31px, 5vw, 50px);
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .cta p {
+            color: #d0dced;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            padding: 25px 5%;
+            background: #041329;
+            color: #9eabc0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        @media (max-width: 950px) {
+
+            .hero {
+                gap: 40px;
+            }
+
+            .hero-photo-area {
+                width: 300px;
+            }
+
+            .hero-photo {
+                width: 300px;
+                height: 390px;
+            }
+
+            .lesson-grid,
+            .system-grid,
+            .pdf-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                gap: 13px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                position: absolute;
+            }
+
+            .navbar {
+                padding: 14px 0;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px 13px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 155px 6% 70px;
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 46px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            .hero-text {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-photo-area {
+                width: 260px;
+            }
+
+            .hero-photo {
+                width: 260px;
+                height: 330px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .lesson-grid,
+            .system-grid,
+            .pdf-grid,
+            .format-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                margin-bottom: 35px;
+            }
+
+            .section-header h2 {
+                font-size: 31px;
+            }
+        }
+
+    </style>
+
+</head>
 
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -993,7 +1653,7 @@
         </div>
 
         <h1>
-            devasa<span>matematikk</span>
+            Devasa Matematik
         </h1>
 
         <h2>
